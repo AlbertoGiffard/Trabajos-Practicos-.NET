@@ -1,0 +1,6 @@
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Entidades\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Entidades\Entidades\bin\Debug\Entidades.dll
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Entidades\Entidades\bin\Debug\Entidades.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Entidades\Entidades\obj\Debug\Entidades.dll
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Entidades\Entidades\obj\Debug\Entidades.pdb
