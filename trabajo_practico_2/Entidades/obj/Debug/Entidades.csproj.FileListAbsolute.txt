@@ -23,3 +23,9 @@ C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajo
 C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_2\trabajo_practico_2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_2\trabajo_practico_2\Entidades\obj\Debug\Entidades.dll
 C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_2\trabajo_practico_2\Entidades\obj\Debug\Entidades.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_2\Entidades\bin\Debug\Entidades.dll
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_2\Entidades\obj\Debug\Entidades.dll
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_2\Entidades\obj\Debug\Entidades.pdb

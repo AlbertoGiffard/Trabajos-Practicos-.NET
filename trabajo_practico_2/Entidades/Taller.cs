@@ -93,24 +93,28 @@ namespace Entidades
         /// <returns></returns>
         public static Taller operator +(Taller t, Vehiculo vehiculo)
         {
-            bool noEstaRepetido = true;
+            //bool noEstaRepetido = true;
 
             if (!(t is null) && !(vehiculo is null))
             {
                 if (t.vehiculos.Count() < t.espacioDisponible)
                 {
-                    foreach (Vehiculo v in t.vehiculos)
-                    {
-                        if (v == vehiculo)
-                        {
-                            noEstaRepetido = false;
-                            break;
-                        }
-                    }
-                    if (noEstaRepetido)
+                    if (!(t.vehiculos.Contains(vehiculo)))
                     {
                         t.vehiculos.Add(vehiculo);
                     }
+                    //foreach (Vehiculo v in t.vehiculos)
+                    //{
+                    //    if (v == vehiculo)
+                    //    {
+                    //        noEstaRepetido = false;
+                    //        break;
+                    //    }
+                    //}
+                    //if (noEstaRepetido)
+                    //{
+                    //    t.vehiculos.Add(vehiculo);
+                    //}
                 }
 
             }
