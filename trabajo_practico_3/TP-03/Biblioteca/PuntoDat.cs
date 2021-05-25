@@ -9,7 +9,7 @@ namespace Biblioteca
 {
     public static class PuntoDat
     {
-        public static bool Guardar(string ruta, string texto)
+        public static bool Guardar(string texto, string ruta)
         {
             bool result = false;
             Stream stream = null;

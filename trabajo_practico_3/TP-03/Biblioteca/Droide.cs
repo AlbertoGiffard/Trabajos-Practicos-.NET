@@ -9,7 +9,7 @@ namespace Biblioteca
     /// <summary>
     /// Uno de los posibles productos que hereda de Productos
     /// </summary>
-    public class Droide : Productos, IFabricar
+    public class Droide : Productos, IFabricar<Droide>
     {
         private TipoDroide tipo;
         private int modelo;
@@ -30,6 +30,51 @@ namespace Biblioteca
             this.tipo = tipo;
             this.modelo = modelo;
         }
+        public int Modelo
+        {
+            get
+            {
+                return this.modelo;
+            }
+        }
+        /// <summary>
+        /// El modelo debe ser mayor a 0 para lograr ensamblar
+        /// </summary>
+        /// <param name="objeto"></param>
+        /// <returns>Devolvera true si cumple la condicion</returns>
+        public bool Ensamblar(Droide objeto)
+        {
+            bool result = false;
+
+            if (objeto.Modelo > 0)
+            {
+                result = true;
+            }
+
+            return result;
+        }
+        /// <summary>
+        /// Si el objeto es null no indicara que se entrego
+        /// </summary>
+        /// <param name="objeto"></param>
+        /// <returns>Devolverá el texto de entregado o arrojara una exception dependiendo 
+        /// de si el objeto es nulo</returns>
+        public string Entregar(Droide objeto)
+        {
+            string result = String.Empty;
+
+            if (!(objeto is null))
+            {
+                result = "Status: Entregado";
+            }
+            else
+            {
+                throw new Exception("No se logró entregar");
+            }
+
+            return result;
+        }
+
         /// <summary>
         /// muestra la información al respecto del droide
         /// </summary>

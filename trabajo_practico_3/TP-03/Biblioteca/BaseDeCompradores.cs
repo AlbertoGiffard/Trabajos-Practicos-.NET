@@ -45,24 +45,21 @@ namespace Biblioteca
 
             return sb.ToString();
         }
-        public static bool operator +(BaseDeCompradores baseCompradores, Cliente cliente)
+        public static BaseDeCompradores operator +(BaseDeCompradores baseCompradores, Cliente cliente)
         {
-            bool result = false;
-
             if (!(baseCompradores is null) && !(cliente is null))
             {
                 if (baseCompradores != cliente)
                 {
                     baseCompradores.listaClientes.Add(cliente);
-                    result = true;
                 }
                 else
                 {
-                    throw new ClienteExisteException("El cliente ya existe");
+                    throw new ClienteExisteException($"El cliente con el ID {cliente.Id} ya existe");
                 }
             }
 
-            return result;
+            return baseCompradores;
         }
         public static bool operator ==(BaseDeCompradores baseCompradores, Cliente cliente)
         {

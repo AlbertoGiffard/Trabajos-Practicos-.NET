@@ -106,10 +106,8 @@ namespace Biblioteca
         /// <param name="producto"></param>
         /// <returns>Devolvera true si se pudo sumar el producto y si no hay stock arrojara una excepcion del tipo
         /// SinStockException</returns>
-        public static bool operator +(Cliente cliente, Productos producto)
+        public static Cliente operator +(Cliente cliente, Productos producto)
         {
-            bool result = false;
-            
             if(cliente != null && producto != null)
             {
                 try
@@ -118,7 +116,6 @@ namespace Biblioteca
                     {
                         cliente.listaProductos.Add(producto);
                         producto.Stock--;
-                        result = true;
                     }
                 }
                 catch (SinStockException e)
@@ -127,7 +124,7 @@ namespace Biblioteca
                 }                
             }
 
-            return result;
+            return cliente;
         }
     }
 }

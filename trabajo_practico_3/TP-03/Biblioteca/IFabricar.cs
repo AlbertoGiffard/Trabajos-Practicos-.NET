@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    public interface IFabricar
+    public interface IFabricar<T>
     {
-        bool Ensamblar<T, U>(T atributo1, U atributo2);
-        string Entregar();
+        bool Ensamblar(T objeto);
+        string Entregar(T objeto);
     }
 }

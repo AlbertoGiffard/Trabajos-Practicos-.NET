@@ -9,11 +9,11 @@ namespace Biblioteca
 {
     public static class PuntoTxt
     {
-        public static void Guardar(string texto, string nombreDeArchivo)
+        public static void Guardar(string texto, string ruta)
         {
             try
-            {
-                using (StreamWriter writer = new StreamWriter(nombreDeArchivo))
+            {               
+                using (StreamWriter writer = new StreamWriter(ruta))
                 {
                     writer.WriteLine(texto);
                 }

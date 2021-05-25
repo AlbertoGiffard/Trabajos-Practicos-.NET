@@ -9,7 +9,7 @@ namespace Biblioteca
     /// <summary>
     /// Uno de los posibles productos que hereda de Productos
     /// </summary>
-    public class Sable : Productos, IFabricar
+    public class Sable : Productos, IFabricar<Sable>
     {
         private Cristales cristal;
         private int cantidadDeHojas;
@@ -31,6 +31,51 @@ namespace Biblioteca
             this.cristal = cristal;
             this.cantidadDeHojas = cantidadDeHojas;
         }
+        public int CantidadDeHojas
+        {
+            get
+            {
+                return this.cantidadDeHojas;
+            }
+        }
+        /// <summary>
+        /// La cantidad debe ser mayor a 0 y menor a 5 para lograr ensamblar
+        /// </summary>
+        /// <param name="objeto"></param>
+        /// <returns>Devolvera true si cumple las condiciones</returns>
+        public bool Ensamblar(Sable objeto)
+        {
+            bool result = false;
+
+            if (objeto.CantidadDeHojas > 0 && objeto.CantidadDeHojas < 5)
+            {
+                result = true;
+            }
+
+            return result;
+        }
+        /// <summary>
+        /// Si el objeto es null no indicara que se entrego
+        /// </summary>
+        /// <param name="objeto"></param>
+        /// <returns>Devolverá el texto de entregado o arrojara una exception dependiendo 
+        /// de si el objeto es nulo</returns>
+        public string Entregar(Sable objeto)
+        {
+            string result = String.Empty;
+
+            if (!(objeto is null))
+            {
+                result = "Status: Entregado";
+            }
+            else
+            {
+                throw new Exception("No se logró entregar");
+            }
+
+            return result;
+        }
+
         /// <summary>
         /// Muestra la informacion del sable de luz
         /// </summary>
