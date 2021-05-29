@@ -17,9 +17,11 @@ namespace Biblioteca
 
         public Productos(int stock, int precio, bool modeloRebelde)
         {
-            this.stock = stock;
+            this.stock = stock;           
             this.precio = precio;
             this.modeloRebelde = modeloRebelde;
+
+            _ = this.HayStock;
         }
         /// <summary>
         /// Si no hay stock lanzara una Exception del tipo SinStockException, en el caso contrario

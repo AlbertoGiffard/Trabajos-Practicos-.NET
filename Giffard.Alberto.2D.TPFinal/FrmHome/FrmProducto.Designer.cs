@@ -50,7 +50,7 @@ namespace FrmProductos
             this.numericHojasSable = new System.Windows.Forms.NumericUpDown();
             this.rchTxtBoxProductos = new System.Windows.Forms.RichTextBox();
             this.btnComprar = new System.Windows.Forms.Button();
-            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblPrecio = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.descargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -185,7 +185,7 @@ namespace FrmProductos
             this.cmbBoxTipoDroide.FormattingEnabled = true;
             this.cmbBoxTipoDroide.Location = new System.Drawing.Point(187, 300);
             this.cmbBoxTipoDroide.Name = "cmbBoxTipoDroide";
-            this.cmbBoxTipoDroide.Size = new System.Drawing.Size(121, 28);
+            this.cmbBoxTipoDroide.Size = new System.Drawing.Size(156, 28);
             this.cmbBoxTipoDroide.TabIndex = 7;
             this.cmbBoxTipoDroide.Visible = false;
             // 
@@ -194,7 +194,7 @@ namespace FrmProductos
             this.lblTamanio.AutoSize = true;
             this.lblTamanio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTamanio.ForeColor = System.Drawing.Color.Yellow;
-            this.lblTamanio.Location = new System.Drawing.Point(241, 230);
+            this.lblTamanio.Location = new System.Drawing.Point(241, 227);
             this.lblTamanio.Name = "lblTamanio";
             this.lblTamanio.Size = new System.Drawing.Size(102, 29);
             this.lblTamanio.TabIndex = 8;
@@ -215,7 +215,7 @@ namespace FrmProductos
             this.lblColor.AutoSize = true;
             this.lblColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblColor.ForeColor = System.Drawing.Color.Yellow;
-            this.lblColor.Location = new System.Drawing.Point(257, 331);
+            this.lblColor.Location = new System.Drawing.Point(258, 311);
             this.lblColor.Name = "lblColor";
             this.lblColor.Size = new System.Drawing.Size(72, 29);
             this.lblColor.TabIndex = 10;
@@ -225,7 +225,7 @@ namespace FrmProductos
             // cmbBoxColorTunica
             // 
             this.cmbBoxColorTunica.FormattingEnabled = true;
-            this.cmbBoxColorTunica.Location = new System.Drawing.Point(231, 363);
+            this.cmbBoxColorTunica.Location = new System.Drawing.Point(231, 352);
             this.cmbBoxColorTunica.Name = "cmbBoxColorTunica";
             this.cmbBoxColorTunica.Size = new System.Drawing.Size(121, 28);
             this.cmbBoxColorTunica.TabIndex = 11;
@@ -306,17 +306,18 @@ namespace FrmProductos
             this.btnComprar.TabIndex = 17;
             this.btnComprar.Text = "Comprar";
             this.btnComprar.UseVisualStyleBackColor = false;
+            this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
             // 
-            // lblTotal
+            // lblPrecio
             // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.Color.Yellow;
-            this.lblTotal.Location = new System.Drawing.Point(-87, 396);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(188, 29);
-            this.lblTotal.TabIndex = 18;
-            this.lblTotal.Text = "                   Total:";
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.ForeColor = System.Drawing.Color.Yellow;
+            this.lblPrecio.Location = new System.Drawing.Point(-87, 396);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(203, 29);
+            this.lblPrecio.TabIndex = 18;
+            this.lblPrecio.Text = "                   Precio:";
             // 
             // txtTotal
             // 
@@ -350,14 +351,16 @@ namespace FrmProductos
             // comoTextotxtToolStripMenuItem
             // 
             this.comoTextotxtToolStripMenuItem.Name = "comoTextotxtToolStripMenuItem";
-            this.comoTextotxtToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.comoTextotxtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.comoTextotxtToolStripMenuItem.Text = "Como texto (.txt)";
+            this.comoTextotxtToolStripMenuItem.Click += new System.EventHandler(this.comoTextotxtToolStripMenuItem_Click);
             // 
             // comoBinariodatToolStripMenuItem
             // 
             this.comoBinariodatToolStripMenuItem.Name = "comoBinariodatToolStripMenuItem";
-            this.comoBinariodatToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.comoBinariodatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.comoBinariodatToolStripMenuItem.Text = "Como binario (.dat)";
+            this.comoBinariodatToolStripMenuItem.Click += new System.EventHandler(this.comoBinariodatToolStripMenuItem_Click);
             // 
             // FrmProducto
             // 
@@ -368,7 +371,7 @@ namespace FrmProductos
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(951, 476);
             this.Controls.Add(this.txtTotal);
-            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.rchTxtBoxProductos);
             this.Controls.Add(this.numericHojasSable);
@@ -396,6 +399,7 @@ namespace FrmProductos
             this.Name = "FrmProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Que vas a querer?";
+            this.Load += new System.EventHandler(this.FrmProducto_Load);
             this.grpProducto.ResumeLayout(false);
             this.grpProducto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericModelo)).EndInit();
@@ -429,7 +433,7 @@ namespace FrmProductos
         private System.Windows.Forms.NumericUpDown numericHojasSable;
         private System.Windows.Forms.RichTextBox rchTxtBoxProductos;
         private System.Windows.Forms.Button btnComprar;
-        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem descargarToolStripMenuItem;

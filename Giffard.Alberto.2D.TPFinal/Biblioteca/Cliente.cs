@@ -70,6 +70,7 @@ namespace Biblioteca
         public string ListarProductos()
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"CLIENTE: {this.nombre}");
             // Se le agrego esta condicion para que no muestre una lista si no tiene productos
             if (this.listaProductos.Count > 0)
             {

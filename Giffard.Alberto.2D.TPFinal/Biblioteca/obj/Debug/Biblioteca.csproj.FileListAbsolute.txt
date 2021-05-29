@@ -9,3 +9,9 @@ C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajo
 C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
 C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\Biblioteca\obj\Debug\Biblioteca.dll
 C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\bin\Debug\Biblioteca.dll
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.dll
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.pdb

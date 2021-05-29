@@ -60,9 +60,9 @@ namespace FrmHome
             this.lblBienvenida.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenida.Location = new System.Drawing.Point(62, 55);
             this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(595, 51);
+            this.lblBienvenida.Size = new System.Drawing.Size(478, 41);
             this.lblBienvenida.TabIndex = 1;
-            this.lblBienvenida.Text = "Bienvenido a la fábrica galáctica";
+            this.lblBienvenida.Text = "Bienvenido a la Fábrica Galáctica";
             // 
             // lblCliente
             // 
@@ -71,7 +71,7 @@ namespace FrmHome
             this.lblCliente.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCliente.Location = new System.Drawing.Point(222, 175);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(190, 41);
+            this.lblCliente.Size = new System.Drawing.Size(156, 32);
             this.lblCliente.TabIndex = 2;
             this.lblCliente.Text = "Eres cliente?";
             // 
@@ -108,7 +108,7 @@ namespace FrmHome
             this.lblId.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblId.Location = new System.Drawing.Point(24, 387);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(186, 32);
+            this.lblId.Size = new System.Drawing.Size(147, 25);
             this.lblId.TabIndex = 5;
             this.lblId.Text = "Indícanos tu ID ";
             this.lblId.Visible = false;
@@ -119,7 +119,7 @@ namespace FrmHome
             this.txtBoxId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxId.Location = new System.Drawing.Point(204, 383);
             this.txtBoxId.Name = "txtBoxId";
-            this.txtBoxId.Size = new System.Drawing.Size(172, 38);
+            this.txtBoxId.Size = new System.Drawing.Size(172, 32);
             this.txtBoxId.TabIndex = 6;
             this.txtBoxId.Visible = false;
             // 
@@ -144,13 +144,13 @@ namespace FrmHome
             this.lblListadoClientes.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListadoClientes.Location = new System.Drawing.Point(722, 9);
             this.lblListadoClientes.Name = "lblListadoClientes";
-            this.lblListadoClientes.Size = new System.Drawing.Size(190, 51);
+            this.lblListadoClientes.Size = new System.Drawing.Size(153, 41);
             this.lblListadoClientes.TabIndex = 8;
             this.lblListadoClientes.Text = "CLIENTES";
             // 
             // FrmHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(976, 501);
