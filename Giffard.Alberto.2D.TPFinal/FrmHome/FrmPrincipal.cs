@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -35,6 +37,8 @@ namespace FrmHome
         /// <param name="e"></param>
         private void FrmHome_Load(object sender, EventArgs e)
         {
+            SoundPlayer audio = new SoundPlayer(FrmHome.Properties.Resources.Connect); // here WindowsFormsApplication1 is the namespace and Connect is the audio file name
+            audio.Play();
             Cliente c1 = new Cliente(1, "Anakin", false);
             Cliente c2 = new Cliente(2, "Leia", true);
             Cliente c3 = new Cliente(3, "Palpatine", false);
@@ -63,6 +67,9 @@ namespace FrmHome
                 c3 += t2;
             }
             catch (ClienteExisteException ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error");
             }
@@ -127,6 +134,12 @@ namespace FrmHome
             formCliente1.ShowDialog();
 
             this.ActualizarClientes();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hasta la próxima");
+            this.Close();
         }
     }
 }

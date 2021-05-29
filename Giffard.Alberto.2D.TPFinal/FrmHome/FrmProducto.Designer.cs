@@ -49,13 +49,14 @@ namespace FrmProductos
             this.lblHojasSable = new System.Windows.Forms.Label();
             this.numericHojasSable = new System.Windows.Forms.NumericUpDown();
             this.rchTxtBoxProductos = new System.Windows.Forms.RichTextBox();
-            this.btnComprar = new System.Windows.Forms.Button();
-            this.lblPrecio = new System.Windows.Forms.Label();
+            this.btnFabricar = new System.Windows.Forms.Button();
+            this.lblPresupuesto = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.descargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comoTextotxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comoBinariodatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.grpProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericModelo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericHojasSable)).BeginInit();
@@ -292,32 +293,32 @@ namespace FrmProductos
             // 
             this.rchTxtBoxProductos.Location = new System.Drawing.Point(615, 78);
             this.rchTxtBoxProductos.Name = "rchTxtBoxProductos";
-            this.rchTxtBoxProductos.Size = new System.Drawing.Size(324, 385);
+            this.rchTxtBoxProductos.Size = new System.Drawing.Size(324, 347);
             this.rchTxtBoxProductos.TabIndex = 16;
             this.rchTxtBoxProductos.Text = "";
             // 
-            // btnComprar
+            // btnFabricar
             // 
-            this.btnComprar.BackColor = System.Drawing.Color.Yellow;
-            this.btnComprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComprar.Location = new System.Drawing.Point(187, 428);
-            this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(232, 36);
-            this.btnComprar.TabIndex = 17;
-            this.btnComprar.Text = "Comprar";
-            this.btnComprar.UseVisualStyleBackColor = false;
-            this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
+            this.btnFabricar.BackColor = System.Drawing.Color.Yellow;
+            this.btnFabricar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFabricar.Location = new System.Drawing.Point(187, 428);
+            this.btnFabricar.Name = "btnFabricar";
+            this.btnFabricar.Size = new System.Drawing.Size(232, 36);
+            this.btnFabricar.TabIndex = 17;
+            this.btnFabricar.Text = "Fabricar";
+            this.btnFabricar.UseVisualStyleBackColor = false;
+            this.btnFabricar.Click += new System.EventHandler(this.btnFabricar_Click);
             // 
-            // lblPrecio
+            // lblPresupuesto
             // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.ForeColor = System.Drawing.Color.Yellow;
-            this.lblPrecio.Location = new System.Drawing.Point(-87, 396);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(203, 29);
-            this.lblPrecio.TabIndex = 18;
-            this.lblPrecio.Text = "                   Precio:";
+            this.lblPresupuesto.AutoSize = true;
+            this.lblPresupuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPresupuesto.ForeColor = System.Drawing.Color.Yellow;
+            this.lblPresupuesto.Location = new System.Drawing.Point(-99, 396);
+            this.lblPresupuesto.Name = "lblPresupuesto";
+            this.lblPresupuesto.Size = new System.Drawing.Size(269, 29);
+            this.lblPresupuesto.TabIndex = 18;
+            this.lblPresupuesto.Text = "                   Presupuesto:";
             // 
             // txtTotal
             // 
@@ -351,16 +352,29 @@ namespace FrmProductos
             // comoTextotxtToolStripMenuItem
             // 
             this.comoTextotxtToolStripMenuItem.Name = "comoTextotxtToolStripMenuItem";
-            this.comoTextotxtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.comoTextotxtToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.comoTextotxtToolStripMenuItem.Text = "Como texto (.txt)";
             this.comoTextotxtToolStripMenuItem.Click += new System.EventHandler(this.comoTextotxtToolStripMenuItem_Click);
             // 
             // comoBinariodatToolStripMenuItem
             // 
             this.comoBinariodatToolStripMenuItem.Name = "comoBinariodatToolStripMenuItem";
-            this.comoBinariodatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.comoBinariodatToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.comoBinariodatToolStripMenuItem.Text = "Como binario (.dat)";
             this.comoBinariodatToolStripMenuItem.Click += new System.EventHandler(this.comoBinariodatToolStripMenuItem_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(725, 433);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 36);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmProducto
             // 
@@ -370,9 +384,10 @@ namespace FrmProductos
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(951, 476);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtTotal);
-            this.Controls.Add(this.lblPrecio);
-            this.Controls.Add(this.btnComprar);
+            this.Controls.Add(this.lblPresupuesto);
+            this.Controls.Add(this.btnFabricar);
             this.Controls.Add(this.rchTxtBoxProductos);
             this.Controls.Add(this.numericHojasSable);
             this.Controls.Add(this.lblHojasSable);
@@ -432,13 +447,14 @@ namespace FrmProductos
         private System.Windows.Forms.Label lblHojasSable;
         private System.Windows.Forms.NumericUpDown numericHojasSable;
         private System.Windows.Forms.RichTextBox rchTxtBoxProductos;
-        private System.Windows.Forms.Button btnComprar;
-        private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.Button btnFabricar;
+        private System.Windows.Forms.Label lblPresupuesto;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem descargarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comoTextotxtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comoBinariodatToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

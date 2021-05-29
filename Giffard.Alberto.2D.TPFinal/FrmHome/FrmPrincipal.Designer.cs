@@ -39,6 +39,7 @@ namespace FrmHome
             this.txtBoxId = new System.Windows.Forms.TextBox();
             this.btnConfirmarId = new System.Windows.Forms.Button();
             this.lblListadoClientes = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rchTxtBoxClientes
@@ -49,7 +50,7 @@ namespace FrmHome
             this.rchTxtBoxClientes.Location = new System.Drawing.Point(609, 55);
             this.rchTxtBoxClientes.Name = "rchTxtBoxClientes";
             this.rchTxtBoxClientes.ReadOnly = true;
-            this.rchTxtBoxClientes.Size = new System.Drawing.Size(355, 435);
+            this.rchTxtBoxClientes.Size = new System.Drawing.Size(355, 400);
             this.rchTxtBoxClientes.TabIndex = 0;
             this.rchTxtBoxClientes.Text = "";
             // 
@@ -148,12 +149,26 @@ namespace FrmHome
             this.lblListadoClientes.TabIndex = 8;
             this.lblListadoClientes.Text = "CLIENTES";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Location = new System.Drawing.Point(727, 461);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(148, 36);
+            this.btnSalir.TabIndex = 9;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(976, 501);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblListadoClientes);
             this.Controls.Add(this.btnConfirmarId);
             this.Controls.Add(this.txtBoxId);
@@ -188,6 +203,7 @@ namespace FrmHome
         private System.Windows.Forms.TextBox txtBoxId;
         private System.Windows.Forms.Button btnConfirmarId;
         private System.Windows.Forms.Label lblListadoClientes;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

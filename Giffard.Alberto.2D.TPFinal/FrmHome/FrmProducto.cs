@@ -120,7 +120,7 @@ namespace FrmProductos
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnComprar_Click(object sender, EventArgs e)
+        private void btnFabricar_Click(object sender, EventArgs e)
         {
             bool modeloRebelde = false;
             if (this.cliente.EsRebelde == "Si")
@@ -143,10 +143,11 @@ namespace FrmProductos
                             Droide nuevoDroide = new Droide((Droide.TipoDroide)cmbBoxTipoDroide.SelectedItem, (int)numericModelo.Value, this.stockDroide, precioDroide, modeloRebelde);
                             if (nuevoDroide.Ensamblar(nuevoDroide))
                             {
+                                this.cliente += nuevoDroide;
                                 MessageBox.Show($"Ensamblando las partes del modelo {numericModelo.Value}", "Ensamblando");
                                 MessageBox.Show($"Paciencia, hay que esperar el secado de la pintura", "Pintando Droide");
                                 MessageBox.Show("Está listo, te llegará en 3 días a tu nave directamente\nGracias por comprarnos!", nuevoDroide.Entregar(nuevoDroide));
-                                this.cliente += nuevoDroide;
+                                this.stockDroide--;
                             }
                             else
                             {
@@ -187,10 +188,11 @@ namespace FrmProductos
                             Tunica nuevaTunica = new Tunica((Tunica.Corte)cmbBoxTamanioTunica.SelectedItem, (Tunica.Color)cmbBoxColorTunica.SelectedItem, this.stockTunica, precioTunica, modeloRebelde);
                             if (nuevaTunica.Ensamblar(nuevaTunica))
                             {
+                                this.cliente += nuevaTunica;
                                 MessageBox.Show($"Buscando tela {cmbBoxColorTunica.SelectedItem.ToString()}", "Creando Arreglo");
                                 MessageBox.Show($"El droide que realiza el arreglo es algo lento...", "Confecionando Túnica");
                                 MessageBox.Show("Está listo, te llegará en 3 días a tu nave directamente\nGracias por comprarnos!", nuevaTunica.Entregar(nuevaTunica));
-                                this.cliente += nuevaTunica;
+                                this.stockTunica--;
                             }
                             else
                             {
@@ -220,10 +222,11 @@ namespace FrmProductos
                             Sable nuevoSable = new Sable((Sable.Cristales)cmbBoxCristalSable.SelectedItem, this.stockSable, precioSable, modeloRebelde);
                             if (nuevoSable.Ensamblar(nuevoSable))
                             {
+                                this.cliente += nuevoSable;
                                 MessageBox.Show($"El cristal es único por lo que lo andamos ensamblando con mucho cuidado.", "Ensamblando");
                                 MessageBox.Show($"Recordando al gran Tío Ben, ahora posees un gran poder.", "Agregando las Hojas");
                                 MessageBox.Show("Está listo, te llegará en 3 días a tu nave directamente.\nGracias por comprarnos!", nuevoSable.Entregar(nuevoSable));
-                                this.cliente += nuevoSable;
+                                this.stockSable--;
                             }
                             else
                             {
@@ -300,6 +303,11 @@ namespace FrmProductos
                     MessageBox.Show("Error: " + exeception.Message);
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
