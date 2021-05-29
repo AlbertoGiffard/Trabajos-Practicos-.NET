@@ -1,7 +1,7 @@
 ﻿
 namespace FrmHome
 {
-    partial class FrmHome
+    partial class FrmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace FrmHome
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.rchTxtBoxClientes = new System.Windows.Forms.RichTextBox();
             this.lblBienvenida = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();

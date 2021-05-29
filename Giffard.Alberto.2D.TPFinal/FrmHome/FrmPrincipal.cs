@@ -13,7 +13,7 @@ using System.Windows.Forms;
 using Biblioteca;
 namespace FrmHome
 {
-    public partial class FrmHome : Form
+    public partial class FrmPrincipal : Form
     {
         private BaseDeCompradores basePrincipal;
         private int stockDroide;
@@ -22,7 +22,7 @@ namespace FrmHome
         /// <summary>
         /// Inicializa el stock de los productos y la base
         /// </summary>
-        public FrmHome()
+        public FrmPrincipal()
         {
             InitializeComponent();
             basePrincipal = new BaseDeCompradores("Base Principal");
@@ -37,8 +37,8 @@ namespace FrmHome
         /// <param name="e"></param>
         private void FrmHome_Load(object sender, EventArgs e)
         {
-            SoundPlayer audio = new SoundPlayer(FrmHome.Properties.Resources.Connect); // here WindowsFormsApplication1 is the namespace and Connect is the audio file name
-            audio.Play();
+            SoundPlayer audio = new SoundPlayer(FrmHome.Properties.Resources.cantina); 
+            audio.PlayLooping();
             Cliente c1 = new Cliente(1, "Anakin", false);
             Cliente c2 = new Cliente(2, "Leia", true);
             Cliente c3 = new Cliente(3, "Palpatine", false);

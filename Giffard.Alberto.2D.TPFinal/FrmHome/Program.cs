@@ -16,7 +16,7 @@ namespace FrmHome
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmHome());
+            Application.Run(new FrmPrincipal());
             //Application.Run(new FrmProductos.FrmProducto());
         }
     }
