@@ -89,17 +89,17 @@ namespace Test
 
             //Guardar en el escritorio un .dat con el listado de los productos y luego 
             //muestra el contenido del binario por consola
-            //try
-            //{
-            //    //Guardar
-            //    PuntoDat.Guardar(c1.ListarProductos(), Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\AlbertoGiffardTesting.dat");
-            //    //Lee
-            //    Console.WriteLine(PuntoDat.Leer(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\AlbertoGiffardTesting.dat"));
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine(e.Message);
-            //}
+            try
+            {
+                //Guardar
+                PuntoDat.Guardar(c1.ListarProductos(), Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\AlbertoGiffardTesting.dat");
+                //Lee
+                Console.WriteLine(PuntoDat.Leer(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\AlbertoGiffardTesting.dat"));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
             Console.ReadKey();
         }

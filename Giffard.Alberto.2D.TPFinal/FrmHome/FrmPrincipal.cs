@@ -17,6 +17,9 @@ namespace FrmHome
         private int stockDroide;
         private int stockTunica;
         private int stockSable;
+        /// <summary>
+        /// Inicializa el stock de los productos y la base
+        /// </summary>
         public FrmHome()
         {
             InitializeComponent();
@@ -25,7 +28,11 @@ namespace FrmHome
             this.stockTunica = 10;
             this.stockSable = 1;
         }
-
+        /// <summary>
+        /// Se crean objetos de pruebas para que cuente con informacion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmHome_Load(object sender, EventArgs e)
         {
             Cliente c1 = new Cliente(1, "Anakin", false);
@@ -62,7 +69,9 @@ namespace FrmHome
 
             rchTxtBoxClientes.Text = this.basePrincipal.MostrarClientes();
         }
-
+        /// <summary>
+        /// Actualiza en el richTextBox la información
+        /// </summary>
         public void ActualizarClientes()
         {
             rchTxtBoxClientes.Text = this.basePrincipal.MostrarClientes();
@@ -73,7 +82,11 @@ namespace FrmHome
             txtBoxId.Visible = true;
             btnConfirmarId.Visible = true;
         }
-
+        /// <summary>
+        /// Abre un formulario de compra/ensamble
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConfirmarId_Click(object sender, EventArgs e)
         {
             int valueId = -1;
@@ -98,7 +111,11 @@ namespace FrmHome
                 txtBoxId.Text = String.Empty;
             }
         }
-
+        /// <summary>
+        /// abre un formulario de alta de cliente
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnNo_Click(object sender, EventArgs e)
         {
             lblId.Visible = false;

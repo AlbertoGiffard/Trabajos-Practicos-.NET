@@ -18,3 +18,13 @@ C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajo
 C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\Test\obj\Debug\Test.csproj.CopyComplete
 C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\Test\obj\Debug\Test.exe
 C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\Test\obj\Debug\Test.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\bin\Debug\Test.exe.config
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\bin\Debug\Test.exe
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\bin\Debug\Test.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\bin\Debug\Biblioteca.dll
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\bin\Debug\Biblioteca.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.exe
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.pdb

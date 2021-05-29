@@ -21,7 +21,9 @@ namespace FrmProductos
         private int stockTunica;
         private int stockSable;
         private Cliente cliente;
-
+        /// <summary>
+        /// inicializo los campos con los enumerados posibles por cada producto
+        /// </summary>
         public FrmProducto()
         {
             InitializeComponent();
@@ -95,7 +97,11 @@ namespace FrmProductos
 
             txtTotal.Text = $"${precioSable}";
         }
-
+        /// <summary>
+        /// Lista los productos comprados por el cliente
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmProducto_Load(object sender, EventArgs e)
         {
             if (this.cliente is null)
@@ -109,7 +115,11 @@ namespace FrmProductos
                 rchTxtBoxProductos.Text = this.cliente.ListarProductos();
             }
         }
-
+        /// <summary>
+        /// Dependiendo de la compra y si todos los campos están correctos  suma el nuevo producto al listado de productos del cliente
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnComprar_Click(object sender, EventArgs e)
         {
             bool modeloRebelde = false;
@@ -235,7 +245,11 @@ namespace FrmProductos
 
             rchTxtBoxProductos.Text = this.cliente.ListarProductos();
         }
-
+        /// <summary>
+        /// Guarda el listado de productos como texto
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comoTextotxtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog save = new SaveFileDialog();
@@ -259,7 +273,11 @@ namespace FrmProductos
                 }
             }
         }
-
+        /// <summary>
+        /// Guarda el listado de productos como archivo binario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comoBinariodatToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog save = new SaveFileDialog();

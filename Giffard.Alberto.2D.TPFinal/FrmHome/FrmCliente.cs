@@ -21,7 +21,13 @@ namespace FrmClientes
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// inicializa los atributos
+        /// </summary>
+        /// <param name="baseDeCompradores"></param>
+        /// <param name="stockDroide"></param>
+        /// <param name="stockTunica"></param>
+        /// <param name="stockSable"></param>
         public FrmCliente(BaseDeCompradores baseDeCompradores, int stockDroide, int stockTunica, int stockSable) : this()
         {
             this.basePrincipal = baseDeCompradores;
@@ -29,7 +35,11 @@ namespace FrmClientes
             this.stockTunica = stockTunica;
             this.stockSable = stockSable;
         }
-
+        /// <summary>
+        /// Si todos los campos están correctos guarda el nuevo cliente en el listado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
             try
@@ -66,7 +76,6 @@ namespace FrmClientes
             {
                 MessageBox.Show(ex.Message, "Error");
             }
-
         }
     }
 }
