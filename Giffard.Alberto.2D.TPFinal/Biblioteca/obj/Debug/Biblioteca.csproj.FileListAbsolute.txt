@@ -27,3 +27,9 @@ C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\B
 C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
 C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.dll
 C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\bin\Debug\Biblioteca.dll
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.dll
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Debug\Biblioteca.pdb
