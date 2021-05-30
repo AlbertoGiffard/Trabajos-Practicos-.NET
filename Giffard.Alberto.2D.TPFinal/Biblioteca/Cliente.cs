@@ -64,11 +64,22 @@ namespace Biblioteca
             }
         }
         /// <summary>
+        /// Devuelve el .Count del listado del cliente
+        /// </summary>
+        public int ListadoProductos
+        {
+            get
+            {
+                return this.listaProductos.Count;
+            }
+        }
+        /// <summary>
         /// Listara todos los productos comprados por el cliente
         /// </summary>
         /// <returns>El listado completo de productos en el caso de que hayan</returns>
         public string ListarProductos()
         {
+            int total = 0;
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"CLIENTE: {this.nombre}");
             // Se le agrego esta condicion para que no muestre una lista si no tiene productos
@@ -77,12 +88,14 @@ namespace Biblioteca
                 foreach (Productos producto in this.listaProductos)
                 {
                     sb.AppendLine($"{producto.MostrarInformación()}");
+                    total += producto.Precio;
                 }
             }
             else
             {
                 sb.AppendLine($"Aún sin productos comprados");
             }
+            sb.AppendLine($"TOTAL: ${total}");
 
             return sb.ToString();
         }

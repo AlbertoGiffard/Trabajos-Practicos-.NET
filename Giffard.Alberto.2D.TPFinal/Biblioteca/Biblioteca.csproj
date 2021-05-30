@@ -54,5 +54,8 @@
     <Compile Include="SinStockException.cs" />
     <Compile Include="Tunica.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram3.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

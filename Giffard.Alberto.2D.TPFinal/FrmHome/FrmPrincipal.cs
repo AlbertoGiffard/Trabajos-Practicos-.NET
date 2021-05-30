@@ -37,7 +37,7 @@ namespace FrmHome
         /// <param name="e"></param>
         private void FrmHome_Load(object sender, EventArgs e)
         {
-            SoundPlayer audio = new SoundPlayer(FrmHome.Properties.Resources.cantina); 
+            SoundPlayer audio = new SoundPlayer(FrmHome.Properties.Resources.cantina);
             audio.PlayLooping();
             Cliente c1 = new Cliente(1, "Anakin", false);
             Cliente c2 = new Cliente(2, "Leia", true);

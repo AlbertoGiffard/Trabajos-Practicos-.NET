@@ -269,11 +269,6 @@ namespace FrmProductos
             // 
             this.numericHojasSable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericHojasSable.Location = new System.Drawing.Point(421, 363);
-            this.numericHojasSable.Maximum = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
             this.numericHojasSable.Minimum = new decimal(new int[] {
             1,
             0,

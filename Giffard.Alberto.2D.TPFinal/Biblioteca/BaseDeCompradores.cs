@@ -72,6 +72,12 @@ namespace Biblioteca
 
             return result;
         }
+        /// <summary>
+        /// Busca el cliente por ID
+        /// </summary>
+        /// <param name="baseCompradores"></param>
+        /// <param name="id"></param>
+        /// <returns>Retorna el cliente si lo consigue si no es null</returns>
         public static Cliente TraerCliente(BaseDeCompradores baseCompradores, int id)
         {
             Cliente cliente = null;
