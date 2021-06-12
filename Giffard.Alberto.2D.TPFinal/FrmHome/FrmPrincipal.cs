@@ -19,6 +19,7 @@ namespace FrmHome
         private int stockDroide;
         private int stockTunica;
         private int stockSable;
+        private SoundPlayer audio;
         /// <summary>
         /// Inicializa el stock de los productos y la base
         /// </summary>
@@ -37,7 +38,7 @@ namespace FrmHome
         /// <param name="e"></param>
         private void FrmHome_Load(object sender, EventArgs e)
         {
-            SoundPlayer audio = new SoundPlayer(FrmHome.Properties.Resources.cantina);
+            audio = new SoundPlayer(FrmHome.Properties.Resources.cantina);
             audio.PlayLooping();
             Cliente c1 = new Cliente(1, "Anakin", false);
             Cliente c2 = new Cliente(2, "Leia", true);
