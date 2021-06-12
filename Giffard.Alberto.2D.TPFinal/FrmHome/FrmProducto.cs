@@ -126,7 +126,7 @@ namespace FrmProductos
         {
             if (this.cliente is null)
             {
-                rchTxtBoxProductos.Text = "ERROR\nNo hay productos cargados", "Error";
+                rchTxtBoxProductos.Text = "ERROR\nNo hay productos cargados";
                 MessageBox.Show("ERROR, no hay cliente cargado", "Error");
                 this.Close();
             }
