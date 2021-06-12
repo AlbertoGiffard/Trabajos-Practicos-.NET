@@ -40,7 +40,27 @@ namespace FrmProductos
             this.stockTunica = stockTunica;
             this.stockSable = stockSable;
         }
-
+        public int StockDroide
+        {
+            get
+            {
+                return this.stockDroide;
+            }
+        }
+        public int StockTunica
+        {
+            get
+            {
+                return this.stockTunica;
+            }
+        }
+        public int StockSable
+        {
+            get
+            {
+                return this.stockSable;
+            }
+        }
         private void radiobtnDroide_CheckedChanged(object sender, EventArgs e)
         {
             lblModelo.Visible = true;
@@ -106,7 +126,7 @@ namespace FrmProductos
         {
             if (this.cliente is null)
             {
-                rchTxtBoxProductos.Text = "ERROR\nNo hay productos cargados";
+                rchTxtBoxProductos.Text = "ERROR\nNo hay productos cargados", "Error";
                 MessageBox.Show("ERROR, no hay cliente cargado", "Error");
                 this.Close();
             }
@@ -222,7 +242,7 @@ namespace FrmProductos
                     {
                         this.cliente += nuevoSable;
                         MessageBox.Show($"El cristal es único por lo que lo andamos incrustando en el mango con mucho cuidado.", "Ensamblando");
-                        MessageBox.Show($"Recordando al gran Tío Ben, ahora posees un gran poder.", "Agregando las Hojas");
+                        MessageBox.Show($"Recordando al gran Tío Ben, ahora posees un gran poder y ya sabes el resto.", "Agregando las Hojas");
                         MessageBox.Show("Está listo, te llegará en 3 días a tu nave directamente.\nGracias por comprarnos!", nuevoSable.Entregar(nuevoSable));
                         this.stockSable--;
                     }
@@ -372,11 +392,11 @@ namespace FrmProductos
 
                     try
                     {
-                        MessageBox.Show(PuntoTxt.Leer(path));
+                        MessageBox.Show(PuntoTxt.Leer(path), "Texto");
                     }
                     catch (Exception exception)
                     {
-                        MessageBox.Show("Error: " + exception.Message);
+                        MessageBox.Show("Error: " + exception.Message, "Error");
                     }
 
                 }
@@ -399,11 +419,11 @@ namespace FrmProductos
 
                     try
                     {
-                        MessageBox.Show(PuntoDat.Leer(path));
+                        MessageBox.Show(PuntoDat.Leer(path), "Binario");
                     }
                     catch (Exception exception)
                     {
-                        MessageBox.Show("Error: " + exception.Message);
+                        MessageBox.Show("Error: " + exception.Message, "Error");
                     }
 
                 }
@@ -427,11 +447,11 @@ namespace FrmProductos
                     try
                     {
                         this.cliente.ListadoProductos = PuntoXml<List<Producto>>.Leer(path);
-                        MessageBox.Show(this.cliente.ListarProductos());
+                        MessageBox.Show(this.cliente.ListarProductos(), "XML");
                     }
                     catch (Exception exception)
                     {
-                        MessageBox.Show("Error: " + exception.Message);
+                        MessageBox.Show("Error: " + exception.Message, "Error");
                     }
 
                 }

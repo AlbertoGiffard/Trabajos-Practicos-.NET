@@ -72,7 +72,7 @@ namespace Biblioteca
             }
             catch (Exception e)
             {
-                throw new Exception("Hubo un error al intentar escribir en la ruta", e);
+                throw new Exception("Hubo un error al intentar leer la ruta", e);
             }
 
             return result;

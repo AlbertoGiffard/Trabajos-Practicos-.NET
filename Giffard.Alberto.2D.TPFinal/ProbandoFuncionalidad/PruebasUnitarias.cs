@@ -51,7 +51,7 @@ namespace ProbandoFuncionalidad
             c1 += p1;
 
             //Assert
-            Assert.AreNotEqual<int>(0, c1.ListadoProductos);
+            Assert.AreNotEqual<int>(0, c1.ListadoProductos.Count);
         }
 
         [TestMethod]

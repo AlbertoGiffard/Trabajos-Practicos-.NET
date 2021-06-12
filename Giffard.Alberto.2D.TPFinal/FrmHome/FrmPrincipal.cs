@@ -110,6 +110,10 @@ namespace FrmHome
                     FrmProductos.FrmProducto frmProducto1 = new FrmProductos.FrmProducto(cliente, this.stockDroide, this.stockTunica, this.stockSable);
 
                     frmProducto1.ShowDialog();
+
+                    this.stockDroide = frmProducto1.StockDroide;
+                    this.stockTunica = frmProducto1.StockTunica;
+                    this.stockSable = frmProducto1.StockSable;
                 }
             }
             else
@@ -132,6 +136,10 @@ namespace FrmHome
             FrmClientes.FrmCliente formCliente1 = new FrmClientes.FrmCliente(this.basePrincipal, this.stockDroide, this.stockTunica, this.stockSable);
 
             formCliente1.ShowDialog();
+
+            this.stockDroide = formCliente1.StockDroide;
+            this.stockTunica = formCliente1.StockTunica;
+            this.stockSable = formCliente1.StockSable;
 
             this.ActualizarClientes();
         }

@@ -68,3 +68,13 @@ C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\
 C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.csproj.CopyComplete
 C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.exe
 C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.pdb
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\bin\Debug\Test.exe.config
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\bin\Debug\Test.exe
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\bin\Debug\Test.pdb
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\bin\Debug\Biblioteca.dll
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\bin\Debug\Biblioteca.pdb
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.exe
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Test\obj\Debug\Test.pdb

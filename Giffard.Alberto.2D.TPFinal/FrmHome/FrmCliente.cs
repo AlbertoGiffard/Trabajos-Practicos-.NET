@@ -35,6 +35,27 @@ namespace FrmClientes
             this.stockTunica = stockTunica;
             this.stockSable = stockSable;
         }
+        public int StockDroide
+        {
+            get
+            {
+                return this.stockDroide;
+            }
+        }
+        public int StockTunica
+        {
+            get
+            {
+                return this.stockTunica;
+            }
+        }
+        public int StockSable
+        {
+            get
+            {
+                return this.stockSable;
+            }
+        }
         /// <summary>
         /// Si todos los campos están correctos guarda el nuevo cliente en el listado
         /// </summary>
@@ -59,6 +80,10 @@ namespace FrmClientes
 
                         FrmProductos.FrmProducto frmProducto1 = new FrmProductos.FrmProducto(nuevoCliente, this.stockDroide, this.stockTunica, this.stockSable);
                         frmProducto1.ShowDialog();
+
+                        this.stockDroide = frmProducto1.StockDroide;
+                        this.stockTunica = frmProducto1.StockTunica;
+                        this.stockSable = frmProducto1.StockSable;
 
                         this.Close();
                     }

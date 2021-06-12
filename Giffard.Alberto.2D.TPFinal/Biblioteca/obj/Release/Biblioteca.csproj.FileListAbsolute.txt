@@ -1,0 +1,5 @@
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\bin\Release\Biblioteca.dll
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\bin\Release\Biblioteca.pdb
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Release\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Release\Biblioteca.dll
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\Biblioteca\obj\Release\Biblioteca.pdb
