@@ -44,13 +44,13 @@ namespace FrmHome
             Cliente c3 = new Cliente(3, "Palpatine", false);
             Cliente c4 = new Cliente(4, "Kylo", false);
             //Productos
-            Productos p1 = new Droide(Droide.TipoDroide.Astromecanico, 2, 6, 1999, true);
+            Producto p1 = new Droide(Droide.TipoDroide.Astromecanico, 2, 6, 1999, true);
             //el d1 al no tener un tipo definido, se le agrega por default de tipo de trabajo
             Droide d1 = new Droide(5, 344, 9999, false);
             Sable s1 = new Sable(Sable.Cristales.Azul, 7, 799, false);
             Sable s2 = new Sable(Sable.Cristales.Rojo, 9, 1, 900, false);
-            Tunica t1 = new Tunica(Tunica.Corte.Larga, Tunica.Color.Oscura, 145, 199, true);
-            Tunica t2 = new Tunica(Tunica.Corte.Personalizada, Tunica.Color.Oscura, 1, 199, true);
+            Tunica t1 = new Tunica(Tunica.Corte.Corta, Tunica.Color.Oscura, 145, 199, true);
+            Tunica t2 = new Tunica(Tunica.Corte.Larga, Tunica.Color.Oscura, 1, 199, true);
 
             try
             {

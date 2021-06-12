@@ -9,10 +9,14 @@ namespace Biblioteca
     /// <summary>
     /// Uno de los posibles productos que hereda de Productos
     /// </summary>
-    public class Tunica : Productos, IFabricar<Tunica>
+    public class Tunica : Producto, IFabricar<Tunica>
     {
         private Corte tamanio;
         private Color color;
+        public Tunica()
+        {
+
+        }
         public Tunica(Corte tamanio, Color color, int stock, int precio, bool modeloRebelde) : base(stock, precio, modeloRebelde)
         {
             this.tamanio = tamanio;
@@ -23,6 +27,10 @@ namespace Biblioteca
             get
             {
                 return this.tamanio;
+            }
+            set
+            {
+                this.tamanio = value;
             }
         }
         /// <summary>

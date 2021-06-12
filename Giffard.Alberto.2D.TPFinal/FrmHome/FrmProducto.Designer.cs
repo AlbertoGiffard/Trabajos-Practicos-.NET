@@ -56,7 +56,12 @@ namespace FrmProductos
             this.descargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comoTextotxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comoBinariodatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
+            this.comoXMLxmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.abrirListadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textotxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.binariodatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xmlxmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grpProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericModelo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericHojasSable)).BeginInit();
@@ -327,8 +332,10 @@ namespace FrmProductos
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.descargarToolStripMenuItem});
+            this.descargarToolStripMenuItem,
+            this.abrirListadoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(951, 24);
@@ -339,37 +346,76 @@ namespace FrmProductos
             // 
             this.descargarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.comoTextotxtToolStripMenuItem,
-            this.comoBinariodatToolStripMenuItem});
+            this.comoBinariodatToolStripMenuItem,
+            this.comoXMLxmlToolStripMenuItem});
             this.descargarToolStripMenuItem.Name = "descargarToolStripMenuItem";
-            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(245, 20);
-            this.descargarToolStripMenuItem.Text = "Descargar listado de productos comprados";
+            this.descargarToolStripMenuItem.Size = new System.Drawing.Size(172, 20);
+            this.descargarToolStripMenuItem.Text = "Guardar listado de productos";
             // 
             // comoTextotxtToolStripMenuItem
             // 
             this.comoTextotxtToolStripMenuItem.Name = "comoTextotxtToolStripMenuItem";
-            this.comoTextotxtToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.comoTextotxtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.comoTextotxtToolStripMenuItem.Text = "Como texto (.txt)";
             this.comoTextotxtToolStripMenuItem.Click += new System.EventHandler(this.comoTextotxtToolStripMenuItem_Click);
             // 
             // comoBinariodatToolStripMenuItem
             // 
             this.comoBinariodatToolStripMenuItem.Name = "comoBinariodatToolStripMenuItem";
-            this.comoBinariodatToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.comoBinariodatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.comoBinariodatToolStripMenuItem.Text = "Como binario (.dat)";
             this.comoBinariodatToolStripMenuItem.Click += new System.EventHandler(this.comoBinariodatToolStripMenuItem_Click);
             // 
-            // button1
+            // comoXMLxmlToolStripMenuItem
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(725, 433);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 36);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.comoXMLxmlToolStripMenuItem.Name = "comoXMLxmlToolStripMenuItem";
+            this.comoXMLxmlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.comoXMLxmlToolStripMenuItem.Text = "Como XML (.xml)";
+            this.comoXMLxmlToolStripMenuItem.Click += new System.EventHandler(this.comoXMLxmlToolStripMenuItem_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSalir.Location = new System.Drawing.Point(725, 433);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(121, 36);
+            this.btnSalir.TabIndex = 21;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // abrirListadoToolStripMenuItem
+            // 
+            this.abrirListadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.textotxtToolStripMenuItem,
+            this.binariodatToolStripMenuItem,
+            this.xmlxmlToolStripMenuItem});
+            this.abrirListadoToolStripMenuItem.Name = "abrirListadoToolStripMenuItem";
+            this.abrirListadoToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.abrirListadoToolStripMenuItem.Text = "Abrir Listado";
+            // 
+            // textotxtToolStripMenuItem
+            // 
+            this.textotxtToolStripMenuItem.Name = "textotxtToolStripMenuItem";
+            this.textotxtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.textotxtToolStripMenuItem.Text = "Texto (.txt)";
+            this.textotxtToolStripMenuItem.Click += new System.EventHandler(this.textotxtToolStripMenuItem_Click);
+            // 
+            // binariodatToolStripMenuItem
+            // 
+            this.binariodatToolStripMenuItem.Name = "binariodatToolStripMenuItem";
+            this.binariodatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.binariodatToolStripMenuItem.Text = "Binario (.dat)";
+            this.binariodatToolStripMenuItem.Click += new System.EventHandler(this.binariodatToolStripMenuItem_Click);
+            // 
+            // xmlxmlToolStripMenuItem
+            // 
+            this.xmlxmlToolStripMenuItem.Name = "xmlxmlToolStripMenuItem";
+            this.xmlxmlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.xmlxmlToolStripMenuItem.Text = "Xml (.xml)";
+            this.xmlxmlToolStripMenuItem.Click += new System.EventHandler(this.xmlxmlToolStripMenuItem_Click);
             // 
             // FrmProducto
             // 
@@ -379,7 +425,7 @@ namespace FrmProductos
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(951, 476);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.lblPresupuesto);
             this.Controls.Add(this.btnFabricar);
@@ -449,7 +495,12 @@ namespace FrmProductos
         private System.Windows.Forms.ToolStripMenuItem descargarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comoTextotxtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comoBinariodatToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.ToolStripMenuItem comoXMLxmlToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abrirListadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem textotxtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem binariodatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xmlxmlToolStripMenuItem;
     }
 }
 

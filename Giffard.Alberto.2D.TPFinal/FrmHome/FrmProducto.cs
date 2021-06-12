@@ -179,7 +179,6 @@ namespace FrmProductos
                 }
                 else
                 {
-
                     try
                     {
                         Tunica nuevaTunica = new Tunica((Tunica.Corte)cmbBoxTamanioTunica.SelectedItem, (Tunica.Color)cmbBoxColorTunica.SelectedItem, this.stockTunica, precioTunica, modeloRebelde);
@@ -323,10 +322,120 @@ namespace FrmProductos
                 }
             }
         }
+        /// <summary>
+        /// Guarda el listado en formato de XML
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void comoXMLxmlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            string path = String.Empty;
+            save.DefaultExt = ".xml";
+            save.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
 
-        private void button1_Click(object sender, EventArgs e)
+            if (save.ShowDialog() == DialogResult.OK && save.FileName != String.Empty)
+            {
+                //Obtiene la ruta
+                path = save.FileName;
+
+                try
+                {
+                    PuntoXml<List<Producto>>.Guardar(this.cliente.ListadoProductos, path);
+                    MessageBox.Show("Guardados los productos correctamente!", "Ok");
+                }
+                catch (Exception exeception)
+                {
+                    MessageBox.Show("Error: " + exeception.Message);
+                }
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        /// <summary>
+        /// Abre un messagebox con el listado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void textotxtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog open = new OpenFileDialog())
+            {
+                open.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                if (open.ShowDialog() == DialogResult.OK)
+                {
+                    //Obtiene la ruta
+                    string path = open.FileName;
+
+                    try
+                    {
+                        MessageBox.Show(PuntoTxt.Leer(path));
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show("Error: " + exception.Message);
+                    }
+
+                }
+            }
+        }
+        /// <summary>
+        /// Abre un messagebox con el listado 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void binariodatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog open = new OpenFileDialog())
+            {
+                open.Filter = "dat files (*.dat)|*.dat|All files (*.*)|*.*";
+                if (open.ShowDialog() == DialogResult.OK)
+                {
+                    //Obtiene la ruta
+                    string path = open.FileName;
+
+                    try
+                    {
+                        MessageBox.Show(PuntoDat.Leer(path));
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show("Error: " + exception.Message);
+                    }
+
+                }
+            }
+        }
+        /// <summary>
+        /// Abre un messagebox con el listado 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void xmlxmlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog open = new OpenFileDialog())
+            {
+                open.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
+                if (open.ShowDialog() == DialogResult.OK)
+                {
+                    //Obtiene la ruta
+                    string path = open.FileName;
+
+                    try
+                    {
+                        this.cliente.ListadoProductos = PuntoXml<List<Producto>>.Leer(path);
+                        MessageBox.Show(this.cliente.ListarProductos());
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show("Error: " + exception.Message);
+                    }
+
+                }
+            }
         }
     }
 }

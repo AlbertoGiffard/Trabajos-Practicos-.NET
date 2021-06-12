@@ -9,7 +9,7 @@ namespace Biblioteca
     /// <summary>
     /// Uno de los posibles productos que hereda de Productos
     /// </summary>
-    public class Droide : Productos, IFabricar<Droide>
+    public class Droide : Producto, IFabricar<Droide>
     {
         private TipoDroide tipo;
         private int modelo;
@@ -20,6 +20,10 @@ namespace Biblioteca
         /// <param name="stock"></param>
         /// <param name="precio"></param>
         /// <param name="modeloRebelde"></param>
+        public Droide()
+        {
+
+        }
         public Droide(int modelo, int stock, int precio, bool modeloRebelde) : base(stock, precio, modeloRebelde)
         {
             this.tipo = TipoDroide.Trabajo;
@@ -35,6 +39,10 @@ namespace Biblioteca
             get
             {
                 return this.modelo;
+            }
+            set
+            {
+                this.modelo = value;
             }
         }
         /// <summary>

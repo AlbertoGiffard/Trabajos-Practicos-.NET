@@ -45,7 +45,7 @@ namespace ProbandoFuncionalidad
         {
             //Arrange
             Cliente c1 = new Cliente(1, "Anakin", false);
-            Productos p1 = new Droide(Droide.TipoDroide.Astromecanico, 2, 600, 1999, true);
+            Producto p1 = new Droide(Droide.TipoDroide.Astromecanico, 2, 600, 1999, true);
 
             //Act
             c1 += p1;
@@ -61,7 +61,7 @@ namespace ProbandoFuncionalidad
             //Arrange
             Cliente c1 = new Cliente(1, "Anakin", false);
             //producto sin stock
-            Productos p1 = new Droide(Droide.TipoDroide.Astromecanico, 2, 0, 1999, true);
+            Producto p1 = new Droide(Droide.TipoDroide.Astromecanico, 2, 0, 1999, true);
 
             //Act
             c1 += p1;

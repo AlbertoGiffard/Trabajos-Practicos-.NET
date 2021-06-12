@@ -11,21 +11,19 @@ namespace Biblioteca
         private int id;
         private string nombre;
         private bool esRebelde;
-        private List<Productos> listaProductos;
-        /// <summary>
-        /// Si no se le pasa una lista al constructor, se inicializa en el constructor de tres parametros
-        /// </summary>
-        /// <param name="id"></param>
-        /// <param name="nombre"></param>
-        /// <param name="esRebelde"></param>
-        public Cliente(int id, string nombre, bool esRebelde)
+        private List<Producto> listaProductos;
+
+        public Cliente()
+        {
+        }
+        public Cliente(int id, string nombre, bool esRebelde) : this()
         {
             this.id = id;
             this.nombre = nombre;
             this.esRebelde = esRebelde;
-            this.listaProductos = new List<Productos>();
+            this.listaProductos = new List<Producto>();
         }
-        public Cliente(int id, string nombre, bool esRebelde, List<Productos> listaProductos) : this(id, nombre, esRebelde)
+        public Cliente(int id, string nombre, bool esRebelde, List<Producto> listaProductos) : this(id, nombre, esRebelde)
         {
             this.id = id;
             this.nombre = nombre;
@@ -40,6 +38,24 @@ namespace Biblioteca
             get
             {
                 return this.id;
+            }
+            set
+            {
+                this.id = value;
+            }
+        }
+        /// <summary>
+        /// devuelve el valor del nombre
+        /// </summary>
+        public string Nombre
+        {
+            get
+            {
+                return this.nombre;
+            }
+            set
+            {
+                this.nombre = value;
             }
         }
         /// <summary>
@@ -62,15 +78,30 @@ namespace Biblioteca
 
                 return result;
             }
+            set
+            {
+                if (this.esRebelde)
+                {
+                    this.esRebelde = true;
+                }
+                else
+                {
+                    this.esRebelde = false;
+                }
+            }
         }
         /// <summary>
-        /// Devuelve el .Count del listado del cliente
+        /// Devuelve el listado del cliente
         /// </summary>
-        public int ListadoProductos
+        public List<Producto> ListadoProductos
         {
             get
             {
-                return this.listaProductos.Count;
+                return this.listaProductos;
+            }
+            set
+            {
+                this.listaProductos = value;
             }
         }
         /// <summary>
@@ -85,7 +116,7 @@ namespace Biblioteca
             // Se le agrego esta condicion para que no muestre una lista si no tiene productos
             if (this.listaProductos.Count > 0)
             {
-                foreach (Productos producto in this.listaProductos)
+                foreach (Producto producto in this.listaProductos)
                 {
                     sb.AppendLine($"{producto.MostrarInformación()}");
                     total += producto.Precio;
@@ -120,7 +151,7 @@ namespace Biblioteca
         /// <param name="producto"></param>
         /// <returns>Devolvera true si se pudo sumar el producto y si no hay stock arrojara una excepcion del tipo
         /// SinStockException</returns>
-        public static Cliente operator +(Cliente cliente, Productos producto)
+        public static Cliente operator +(Cliente cliente, Producto producto)
         {
             if(cliente != null && producto != null)
             {

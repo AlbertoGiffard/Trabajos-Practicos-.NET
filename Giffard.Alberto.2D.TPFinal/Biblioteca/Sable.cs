@@ -9,7 +9,7 @@ namespace Biblioteca
     /// <summary>
     /// Uno de los posibles productos que hereda de Productos
     /// </summary>
-    public class Sable : Productos, IFabricar<Sable>
+    public class Sable : Producto, IFabricar<Sable>
     {
         private Cristales cristal;
         private int cantidadDeHojas;
@@ -21,6 +21,10 @@ namespace Biblioteca
         /// <param name="stock"></param>
         /// <param name="precio"></param>
         /// <param name="modeloRebelde"></param>
+        public Sable()
+        {
+
+        }
         public Sable(Cristales cristal, int stock, int precio, bool modeloRebelde) : base(stock, precio, modeloRebelde)
         {
             this.cristal = cristal;
@@ -36,6 +40,10 @@ namespace Biblioteca
             get
             {
                 return this.cantidadDeHojas;
+            }
+            set
+            {
+                this.cantidadDeHojas = value;
             }
         }
         /// <summary>
