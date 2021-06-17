@@ -1,0 +1,133 @@
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\bin\Debug\FrmHome.exe.config
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\bin\Debug\FrmHome.exe
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\bin\Debug\FrmHome.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\obj\Debug\FrmHome.csproj.AssemblyReference.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\obj\Debug\FrmHome.FrmHome.resources
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\obj\Debug\FrmHome.Properties.Resources.resources
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\obj\Debug\FrmHome.csproj.GenerateResource.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\obj\Debug\FrmHome.csproj.CoreCompileInputs.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\obj\Debug\FrmHome.exe
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\obj\Debug\FrmHome.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\bin\Debug\Biblioteca.dll
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\bin\Debug\Biblioteca.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\trabajo_practico_3\TP3\FrmHome\obj\Debug\FrmHome.csproj.CopyComplete
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe.config
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.dll
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.AssemblyReference.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.Properties.Resources.resources
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.GenerateResource.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CoreCompileInputs.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CopyComplete
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.exe
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmClientes.FrmCliente.resources
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmProductos.FrmProducto.resources
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Trabajos Practicos\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.FrmPrincipal.resources
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe.config
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.dll
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.pdb
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.AssemblyReference.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmClientes.FrmCliente.resources
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.FrmPrincipal.resources
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmProductos.FrmProducto.resources
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.Properties.Resources.resources
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.GenerateResource.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CoreCompileInputs.cache
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CopyComplete
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.exe
+C:\Users\alber\OneDrive\Documentos\UTN\2do Cuatrimestre\Programación II\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.pdb
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.AssemblyReference.cache
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmClientes.FrmCliente.resources
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.FrmPrincipal.resources
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmProductos.FrmProducto.resources
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.Properties.Resources.resources
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.GenerateResource.cache
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CoreCompileInputs.cache
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.exe
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.pdb
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe.config
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.pdb
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.dll
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.pdb
+C:\Users\alber\Downloads\testing\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CopyComplete
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe.config
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.pdb
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.dll
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.pdb
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.AssemblyReference.cache
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmClientes.FrmCliente.resources
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.FrmPrincipal.resources
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmProductos.FrmProducto.resources
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.Properties.Resources.resources
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.GenerateResource.cache
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CoreCompileInputs.cache
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CopyComplete
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.exe
+C:\Users\alber\Downloads\test\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.pdb
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe.config
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.pdb
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.dll
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.pdb
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.AssemblyReference.cache
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmClientes.FrmCliente.resources
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.FrmPrincipal.resources
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmProductos.FrmProducto.resources
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.Properties.Resources.resources
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.GenerateResource.cache
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CoreCompileInputs.cache
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CopyComplete
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.exe
+C:\Users\alber\Downloads\TPs\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.pdb
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe.config
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.pdb
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.dll
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.pdb
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.AssemblyReference.cache
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmClientes.FrmCliente.resources
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.FrmPrincipal.resources
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmProductos.FrmProducto.resources
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.Properties.Resources.resources
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.GenerateResource.cache
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CoreCompileInputs.cache
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CopyComplete
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.exe
+C:\Users\alber\Downloads\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.pdb
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe.config
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.exe
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\FrmHome.pdb
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.dll
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\bin\Debug\Biblioteca.pdb
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.AssemblyReference.cache
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmClientes.FrmCliente.resources
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.FrmPrincipal.resources
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmProductos.FrmProducto.resources
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.Properties.Resources.resources
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.GenerateResource.cache
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CoreCompileInputs.cache
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.csproj.CopyComplete
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.exe
+C:\Users\alber\Escritorio\trabajo_practico_1\Giffard.Alberto.2D.TPFinal\FrmHome\obj\Debug\FrmHome.pdb
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\bin\Debug\FrmHome.exe.config
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\bin\Debug\FrmHome.exe
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\bin\Debug\FrmHome.pdb
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\bin\Debug\Biblioteca.dll
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\bin\Debug\Biblioteca.pdb
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\obj\Debug\FrmHome.csproj.AssemblyReference.cache
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\obj\Debug\FrmClientes.FrmCliente.resources
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\obj\Debug\FrmHome.FrmPrincipal.resources
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\obj\Debug\FrmProductos.FrmProducto.resources
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\obj\Debug\FrmHome.Properties.Resources.resources
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\obj\Debug\FrmHome.csproj.GenerateResource.cache
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\obj\Debug\FrmHome.csproj.CoreCompileInputs.cache
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\obj\Debug\FrmHome.csproj.CopyComplete
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\obj\Debug\FrmHome.exe
+C:\Users\alber\Downloads\trabajo_practico_1\tp4\FrmHome\obj\Debug\FrmHome.pdb
