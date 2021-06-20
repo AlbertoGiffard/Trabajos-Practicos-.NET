@@ -48,7 +48,7 @@ namespace Biblioteca
         /// <returns>devuelve true si lo logro realizar</returns>
         public static bool GuardarCliente(Cliente cliente)
         {
-            return Conexion.EjecutarComando($"INSERT INTO Cliente (Id, Nombre, EsRebelde) VALUES ({cliente.Id},{cliente.Nombre},{cliente.EsRebeldeBoolean})");
+            return Conexion.EjecutarComando($"INSERT INTO Cliente (Id, Nombre, EsRebelde) VALUES ('{cliente.Id}','{cliente.Nombre}','{cliente.EsRebeldeBoolean}')");
         }
         /// <summary>
         /// Elimina un cliente de la base de datos
@@ -57,7 +57,7 @@ namespace Biblioteca
         /// <returns>devuelve true si lo logro realizar</returns>
         public static bool EliminarCliente(Cliente cliente)
         {
-            return Conexion.EjecutarComando($"DELETE FROM Cliente WHERE Id = {cliente.Id}");            
+            return Conexion.EjecutarComando($"DELETE FROM Cliente WHERE Id = {cliente.Id}");
         }
         /// <summary>
         /// Guarda el nuevo producto a partir del id del cliente
@@ -69,17 +69,18 @@ namespace Biblioteca
         {
             string query = String.Empty;
 
-            if(producto is Droide)
+            if (producto is Droide)
             {
-                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, Modelo, Corte, ColorTunica, Cristal, CantidadHojas) VALUES ({clienteId}, Droide,{((Droide)producto).Stock}, {((Droide)producto).Precio}, {((Droide)producto).ModeloRebelde}, {((Droide)producto).Tipo}, {((Droide)producto).Modelo}, {null}, {null}, {null}, {null})";
+                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, ModeloDroide, CorteTunica, ColorTunica, CristalSable, CantidadHojas) VALUES ('{clienteId}', 'Droide', '{((Droide)producto).Stock}', '{((Droide)producto).Precio}', '{((Droide)producto).ModeloRebelde}', '{((Droide)producto).Tipo}', '{((Droide)producto).Modelo}', '{null}', '{null}', '{null}', '{null}')";
 
-            } else if(producto is Tunica)
+            }
+            else if (producto is Tunica)
             {
-                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, Modelo, Corte, ColorTunica, Cristal, CantidadHojas) VALUES ({clienteId}, Tunica,{((Tunica)producto).Stock}, {((Tunica)producto).Precio}, {((Tunica)producto).ModeloRebelde}, {null}, {null}, {((Tunica)producto).Tamanio}, {((Tunica)producto).CualColor}, {null}, {null})";
+                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, ModeloDroide, CorteTunica, ColorTunica, CristalSable, CantidadHojas) VALUES ('{clienteId}', 'Tunica', '{((Tunica)producto).Stock}', '{((Tunica)producto).Precio}', '{((Tunica)producto).ModeloRebelde}', '{null}', '{null}', '{((Tunica)producto).Tamanio}', '{((Tunica)producto).CualColor}', '{null}', '{null}')";
             }
             else
             {
-                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, Modelo, Corte, ColorTunica, Cristal, CantidadHojas) VALUES ({clienteId}, Sable,{((Sable)producto).Stock}, {((Sable)producto).Precio}, {((Sable)producto).ModeloRebelde}, {null}, {null}, {null}, {null}, {((Sable)producto).Cristal}, {((Sable)producto).CantidadDeHojas})";
+                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, ModeloDroide, CorteTunica, ColorTunica, CristalSable, CantidadHojas) VALUES ('{clienteId}', 'Sable','{((Sable)producto).Stock}', '{((Sable)producto).Precio}', '{((Sable)producto).ModeloRebelde}','{null}', '{null}', '{null}', '{null}', '{((Sable)producto).Cristal}', '{((Sable)producto).CantidadDeHojas}')";
             }
 
             return Conexion.EjecutarComando(query);
@@ -146,7 +147,7 @@ namespace Biblioteca
         /// </summary>
         /// <param name="id"></param>
         /// <returns>devuelve el listado de productos</returns>
-        public static List<Producto> RetornarProductos(int id)
+        private static List<Producto> RetornarProductos(int id)
         {
             List<Producto> listado = new List<Producto>();
             string query = $"SELECT * FROM Producto WHERE Producto.ClienteId = '{id}'";
@@ -181,19 +182,78 @@ namespace Biblioteca
                     switch (dataReader["TipoProducto"].ToString())
                     {
                         case "Droide":
-                            tipoDroide = (Droide.TipoDroide)dataReader["TipoDroide"];
-                            modelo = Convert.ToInt32(dataReader["Modelo"]);
+                            switch (dataReader["TipoDroide"].ToString())
+                            {
+                                case "Astromecanico":
+                                    tipoDroide = Droide.TipoDroide.Astromecanico;
+                                    break;
+
+                                case "Combate":
+                                    tipoDroide = Droide.TipoDroide.Combate;
+                                    break;
+
+                                case "Medico":
+                                    tipoDroide = Droide.TipoDroide.Medico;
+                                    break;
+
+                                default:
+                                    tipoDroide = Droide.TipoDroide.Trabajo;
+                                    break;
+                            }
+                            modelo = Convert.ToInt32(dataReader["ModeloDroide"]);
                             listado.Add(new Droide(tipoDroide, modelo, stock, precio, modeloRebelde));
                             break;
 
                         case "Tunica":
-                            corte = (Tunica.Corte)dataReader["Corte"];
-                            colorTunica = (Tunica.Color)dataReader["Color"];
+                            //corte
+                            switch (dataReader["CorteTunica"].ToString())
+                            {
+                                case "Corta":
+                                    corte = Tunica.Corte.Corta;
+                                    break;
+
+                                case "Larga":
+                                    corte = Tunica.Corte.Larga;
+                                    break;
+
+                                default:
+                                    corte = Tunica.Corte.Personalizada;
+                                    break;
+                            }
+                            //color
+                            switch (dataReader["ColorTunica"].ToString())
+                            {
+                                case "Clara":
+                                    colorTunica = Tunica.Color.Clara;
+                                    break;
+
+                                default:
+                                    colorTunica = Tunica.Color.Oscura;
+                                    break;
+                            }
                             listado.Add(new Tunica(corte, colorTunica, stock, precio, modeloRebelde));
                             break;
 
                         case "Sable":
-                            cristal = (Sable.Cristales)dataReader["Cristal"];
+                            //cristal
+                            switch (dataReader["CristalSable"].ToString())
+                            {
+                                case "Azul":
+                                    cristal = Sable.Cristales.Azul;
+                                    break;
+
+                                case "Morado":
+                                    cristal = Sable.Cristales.Morado;
+                                    break;
+
+                                case "Rojo":
+                                    cristal = Sable.Cristales.Rojo;
+                                    break;
+
+                                default:
+                                    cristal = Sable.Cristales.Verde;
+                                    break;
+                            }
                             cantidadHojas = Convert.ToInt32(dataReader["CantidadHojas"]);
                             listado.Add(new Sable(cristal, cantidadHojas, stock, precio, modeloRebelde));
                             break;
