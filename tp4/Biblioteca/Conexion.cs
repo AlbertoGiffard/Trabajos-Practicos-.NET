@@ -60,6 +60,15 @@ namespace Biblioteca
             return Conexion.EjecutarComando($"DELETE FROM Cliente WHERE Id = {cliente.Id}");
         }
         /// <summary>
+        /// Elimina los productos que correspondan al cliente
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
+        public static bool EliminarProductos(Cliente cliente)
+        {
+            return Conexion.EjecutarComando($"DELETE FROM Producto WHERE Producto.ClienteId = {cliente.Id}");
+        }
+        /// <summary>
         /// Guarda el nuevo producto a partir del id del cliente
         /// </summary>
         /// <param name="producto"></param>
@@ -71,16 +80,16 @@ namespace Biblioteca
 
             if (producto is Droide)
             {
-                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, ModeloDroide, CorteTunica, ColorTunica, CristalSable, CantidadHojas) VALUES ('{clienteId}', 'Droide', '{((Droide)producto).Stock}', '{((Droide)producto).Precio}', '{((Droide)producto).ModeloRebelde}', '{((Droide)producto).Tipo}', '{((Droide)producto).Modelo}', '{null}', '{null}', '{null}', '{null}')";
+                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, ModeloDroide, CorteTunica, ColorTunica, CristalSable, CantidadHojas) VALUES ('{clienteId}', 'Droide', '{((Droide)producto).Stock}', '{((Droide)producto).Precio}', '{((Droide)producto).ModeloRebeldeBoolean}', '{((Droide)producto).Tipo}', '{((Droide)producto).Modelo}', '{null}', '{null}', '{null}', '{null}')";
 
             }
             else if (producto is Tunica)
             {
-                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, ModeloDroide, CorteTunica, ColorTunica, CristalSable, CantidadHojas) VALUES ('{clienteId}', 'Tunica', '{((Tunica)producto).Stock}', '{((Tunica)producto).Precio}', '{((Tunica)producto).ModeloRebelde}', '{null}', '{null}', '{((Tunica)producto).Tamanio}', '{((Tunica)producto).CualColor}', '{null}', '{null}')";
+                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, ModeloDroide, CorteTunica, ColorTunica, CristalSable, CantidadHojas) VALUES ('{clienteId}', 'Tunica', '{((Tunica)producto).Stock}', '{((Tunica)producto).Precio}', '{((Tunica)producto).ModeloRebeldeBoolean}', '{null}', '{null}', '{((Tunica)producto).Tamanio}', '{((Tunica)producto).CualColor}', '{null}', '{null}')";
             }
             else
             {
-                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, ModeloDroide, CorteTunica, ColorTunica, CristalSable, CantidadHojas) VALUES ('{clienteId}', 'Sable','{((Sable)producto).Stock}', '{((Sable)producto).Precio}', '{((Sable)producto).ModeloRebelde}','{null}', '{null}', '{null}', '{null}', '{((Sable)producto).Cristal}', '{((Sable)producto).CantidadDeHojas}')";
+                query = $"INSERT INTO Producto (ClienteId, TipoProducto, Stock, Precio, ModeloRebelde, TipoDroide, ModeloDroide, CorteTunica, ColorTunica, CristalSable, CantidadHojas) VALUES ('{clienteId}', 'Sable','{((Sable)producto).Stock}', '{((Sable)producto).Precio}', '{((Sable)producto).ModeloRebeldeBoolean}','{null}', '{null}', '{null}', '{null}', '{((Sable)producto).Cristal}', '{((Sable)producto).CantidadDeHojas}')";
             }
 
             return Conexion.EjecutarComando(query);

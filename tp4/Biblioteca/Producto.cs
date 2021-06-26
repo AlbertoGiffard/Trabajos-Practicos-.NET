@@ -110,6 +110,13 @@ namespace Biblioteca
                 }
             }
         }
+        public bool ModeloRebeldeBoolean
+        {
+            get
+            {
+                return this.modeloRebelde;
+            }
+        }
         /// <summary>
         /// El metodo será sobrescrito por las clases derivadas
         /// </summary>

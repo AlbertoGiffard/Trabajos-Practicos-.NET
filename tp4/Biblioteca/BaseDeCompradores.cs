@@ -115,6 +115,17 @@ namespace Biblioteca
 
             return baseCompradores;
         }
+        public bool RemoverTodosLosClientes()
+        {
+            bool result = false;
+
+            for (int i = this.listaClientes.Count - 1; i >= 0; i--)
+            {
+                this.listaClientes.Remove(this.listaClientes[i]);
+            }
+
+            return result;
+        }
         /// <summary>
         /// A partir del ID del cliente verifica si el cliente pertenece a la base
         /// </summary>

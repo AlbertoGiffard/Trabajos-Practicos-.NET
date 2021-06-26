@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 using Biblioteca;
 namespace FrmProductos
-{
+{    
     public partial class FrmProducto : Form
     {
         //Los precios para que no vayan a ser modficados los declaro como constantes
@@ -132,6 +132,9 @@ namespace FrmProductos
             }
             else
             {
+                this.cliente = Conexion.RetornarInformacionCliente(this.cliente.Id);
+                //Se suscribe el manejador al evento
+                this.cliente.MostrarListadoDeProductos += this.MostrarEnRchTxtProductos;
                 rchTxtBoxProductos.Text = this.cliente.ListarProductos();
             }
         }
@@ -158,6 +161,7 @@ namespace FrmProductos
                     if (nuevoDroide.Ensamblar(nuevoDroide))
                     {
                         this.cliente += nuevoDroide;
+                        Conexion.GuardarNuevoProducto(nuevoDroide, this.cliente.Id);
                         MessageBox.Show($"Ensamblando las partes del modelo {numericModelo.Value}", "Ensamblando");
                         MessageBox.Show($"Paciencia, hay que esperar el secado de la pintura", "Pintando Droide");
                         MessageBox.Show("Está listo, te llegará en 3 días a tu nave directamente\nGracias por comprarnos!", nuevoDroide.Entregar(nuevoDroide));
@@ -205,6 +209,7 @@ namespace FrmProductos
                         if (nuevaTunica.Ensamblar(nuevaTunica))
                         {
                             this.cliente += nuevaTunica;
+                            Conexion.GuardarNuevoProducto(nuevaTunica, this.cliente.Id);
                             MessageBox.Show($"Buscando tela {cmbBoxColorTunica.SelectedItem.ToString()}", "Creando Arreglo");
                             MessageBox.Show($"El droide que realiza el arreglo es algo lento...", "Confecionando Túnica");
                             MessageBox.Show("Está listo, te llegará en 3 días a tu nave directamente\nGracias por comprarnos!", nuevaTunica.Entregar(nuevaTunica));
@@ -241,6 +246,7 @@ namespace FrmProductos
                     if (nuevoSable.Ensamblar(nuevoSable))
                     {
                         this.cliente += nuevoSable;
+                        Conexion.GuardarNuevoProducto(nuevoSable, this.cliente.Id);
                         MessageBox.Show($"El cristal es único por lo que lo andamos incrustando en el mango con mucho cuidado.", "Ensamblando");
                         MessageBox.Show($"Recordando al gran Tío Ben, ahora posees un gran poder y ya sabes el resto.", "Agregando las Hojas");
                         MessageBox.Show("Está listo, te llegará en 3 días a tu nave directamente.\nGracias por comprarnos!", nuevoSable.Entregar(nuevoSable));
@@ -458,5 +464,35 @@ namespace FrmProductos
             }
         }
 
+        private void btnEliminarProductos_Click(object sender, EventArgs e)
+        {
+            if (this.cliente.ListadoProductos.Count > 0)
+            {
+                try
+                {
+                    Conexion.EliminarProductos(this.cliente);
+                    MessageBox.Show("Eliminado exitosamente", "Listo!");
+                    this.cliente.ListadoProductos = new List<Producto>();
+                    rchTxtBoxProductos.Text = this.cliente.ListarProductos();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("No se lograron borrar los productos, intenté en otro momento", "Error");
+                }
+                finally
+                {
+                    rchTxtBoxProductos.Text = this.cliente.ListarProductos();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay productos para eliminar...", "Error");
+            }
+        }
+
+        private void MostrarEnRchTxtProductos(string texto)
+        {
+            rchTxtBoxProductos.Text = texto;
+        }
     }
 }

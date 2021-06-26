@@ -64,6 +64,7 @@ namespace FrmProductos
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblComparar = new System.Windows.Forms.Label();
             this.rchTxtBoxComparar = new System.Windows.Forms.RichTextBox();
+            this.btnEliminarProductos = new System.Windows.Forms.Button();
             this.grpProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericModelo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericHojasSable)).BeginInit();
@@ -388,21 +389,21 @@ namespace FrmProductos
             // textotxtToolStripMenuItem
             // 
             this.textotxtToolStripMenuItem.Name = "textotxtToolStripMenuItem";
-            this.textotxtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.textotxtToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.textotxtToolStripMenuItem.Text = "Texto (.txt)";
             this.textotxtToolStripMenuItem.Click += new System.EventHandler(this.textotxtToolStripMenuItem_Click);
             // 
             // binariodatToolStripMenuItem
             // 
             this.binariodatToolStripMenuItem.Name = "binariodatToolStripMenuItem";
-            this.binariodatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.binariodatToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.binariodatToolStripMenuItem.Text = "Binario (.dat)";
             this.binariodatToolStripMenuItem.Click += new System.EventHandler(this.binariodatToolStripMenuItem_Click);
             // 
             // xmlxmlToolStripMenuItem
             // 
             this.xmlxmlToolStripMenuItem.Name = "xmlxmlToolStripMenuItem";
-            this.xmlxmlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.xmlxmlToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.xmlxmlToolStripMenuItem.Text = "Xml (.xml)";
             this.xmlxmlToolStripMenuItem.Click += new System.EventHandler(this.xmlxmlToolStripMenuItem_Click);
             // 
@@ -440,6 +441,19 @@ namespace FrmProductos
             this.rchTxtBoxComparar.TabIndex = 23;
             this.rchTxtBoxComparar.Text = "Sin nada con que comparar...";
             // 
+            // btnEliminarProductos
+            // 
+            this.btnEliminarProductos.BackColor = System.Drawing.Color.Red;
+            this.btnEliminarProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarProductos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEliminarProductos.Location = new System.Drawing.Point(615, 396);
+            this.btnEliminarProductos.Name = "btnEliminarProductos";
+            this.btnEliminarProductos.Size = new System.Drawing.Size(251, 29);
+            this.btnEliminarProductos.TabIndex = 24;
+            this.btnEliminarProductos.Text = "Eliminar productos";
+            this.btnEliminarProductos.UseVisualStyleBackColor = false;
+            this.btnEliminarProductos.Click += new System.EventHandler(this.btnEliminarProductos_Click);
+            // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -448,6 +462,7 @@ namespace FrmProductos
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1157, 476);
+            this.Controls.Add(this.btnEliminarProductos);
             this.Controls.Add(this.rchTxtBoxComparar);
             this.Controls.Add(this.lblComparar);
             this.Controls.Add(this.btnSalir);
@@ -528,6 +543,7 @@ namespace FrmProductos
         private System.Windows.Forms.ToolStripMenuItem xmlxmlToolStripMenuItem;
         private System.Windows.Forms.Label lblComparar;
         private System.Windows.Forms.RichTextBox rchTxtBoxComparar;
+        private System.Windows.Forms.Button btnEliminarProductos;
     }
 }
 

@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
+    public delegate void MostrarProductos(string texto);
     public class Cliente
     {
         private int id;
         private string nombre;
         private bool esRebelde;
         private List<Producto> listaProductos;
+
+        public event MostrarProductos MostrarListadoDeProductos;
 
         public Cliente()
         {
@@ -95,6 +98,7 @@ namespace Biblioteca
                 {
                     this.esRebelde = false;
                 }
+                this.MostrarListadoDeProductos.Invoke(this.ListarProductos());
             }
         }
         /// <summary>
@@ -109,6 +113,8 @@ namespace Biblioteca
             set
             {
                 this.listaProductos = value;
+
+                this.MostrarListadoDeProductos.Invoke(this.ListarProductos());
             }
         }
         /// <summary>
@@ -133,7 +139,7 @@ namespace Biblioteca
             {
                 sb.AppendLine($"Aún sin productos comprados");
             }
-            sb.AppendLine($"TOTAL: ${total}");
+            sb.AppendLine($"TOTAL: ${total}\n");
 
             return sb.ToString();
         }
@@ -175,6 +181,8 @@ namespace Biblioteca
                     throw new SinStockException("Nos quedamos sin stock", e);
                 }                
             }
+
+            cliente.MostrarListadoDeProductos.Invoke(cliente.ListarProductos());
 
             return cliente;
         }

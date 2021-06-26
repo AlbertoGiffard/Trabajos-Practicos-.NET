@@ -57,7 +57,7 @@ namespace FrmClientes
             }
         }
         /// <summary>
-        /// Si todos los campos están correctos guarda el nuevo cliente en el listado
+        /// Si todos los campos están correctos guarda el nuevo cliente en el listado y en la base de datos
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -76,6 +76,9 @@ namespace FrmClientes
                     try
                     {
                         this.basePrincipal += nuevoCliente;
+
+                        Conexion.GuardarCliente(nuevoCliente);
+
                         MessageBox.Show("Cargado Correctamente!\nYa puedes empezar a comprar", "Excelente");
 
                         FrmProductos.FrmProducto frmProducto1 = new FrmProductos.FrmProducto(nuevoCliente, this.stockDroide, this.stockTunica, this.stockSable);

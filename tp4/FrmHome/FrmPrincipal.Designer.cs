@@ -40,6 +40,10 @@ namespace FrmHome
             this.btnConfirmarId = new System.Windows.Forms.Button();
             this.lblListadoClientes = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnFabricar = new System.Windows.Forms.Button();
+            this.btnDarBaja = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.lblStatusCambiando = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // rchTxtBoxClientes
@@ -70,7 +74,7 @@ namespace FrmHome
             this.lblCliente.AutoSize = true;
             this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(222, 175);
+            this.lblCliente.Location = new System.Drawing.Point(222, 131);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(156, 32);
             this.lblCliente.TabIndex = 2;
@@ -81,7 +85,7 @@ namespace FrmHome
             this.btnNo.BackColor = System.Drawing.Color.Yellow;
             this.btnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNo.ForeColor = System.Drawing.Color.Black;
-            this.btnNo.Location = new System.Drawing.Point(48, 250);
+            this.btnNo.Location = new System.Drawing.Point(48, 206);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(235, 61);
             this.btnNo.TabIndex = 3;
@@ -94,7 +98,7 @@ namespace FrmHome
             this.btnSi.BackColor = System.Drawing.Color.Yellow;
             this.btnSi.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSi.ForeColor = System.Drawing.Color.Black;
-            this.btnSi.Location = new System.Drawing.Point(330, 250);
+            this.btnSi.Location = new System.Drawing.Point(330, 206);
             this.btnSi.Name = "btnSi";
             this.btnSi.Size = new System.Drawing.Size(235, 61);
             this.btnSi.TabIndex = 4;
@@ -107,7 +111,7 @@ namespace FrmHome
             this.lblId.AutoSize = true;
             this.lblId.BackColor = System.Drawing.Color.Transparent;
             this.lblId.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(24, 387);
+            this.lblId.Location = new System.Drawing.Point(38, 386);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(147, 25);
             this.lblId.TabIndex = 5;
@@ -118,7 +122,7 @@ namespace FrmHome
             // 
             this.txtBoxId.BackColor = System.Drawing.SystemColors.Window;
             this.txtBoxId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxId.Location = new System.Drawing.Point(204, 383);
+            this.txtBoxId.Location = new System.Drawing.Point(218, 382);
             this.txtBoxId.Name = "txtBoxId";
             this.txtBoxId.Size = new System.Drawing.Size(172, 32);
             this.txtBoxId.TabIndex = 6;
@@ -129,7 +133,7 @@ namespace FrmHome
             this.btnConfirmarId.BackColor = System.Drawing.Color.Yellow;
             this.btnConfirmarId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmarId.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirmarId.Location = new System.Drawing.Point(417, 383);
+            this.btnConfirmarId.Location = new System.Drawing.Point(431, 382);
             this.btnConfirmarId.Name = "btnConfirmarId";
             this.btnConfirmarId.Size = new System.Drawing.Size(148, 36);
             this.btnConfirmarId.TabIndex = 7;
@@ -162,12 +166,65 @@ namespace FrmHome
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // FrmHome
+            // btnFabricar
+            // 
+            this.btnFabricar.BackColor = System.Drawing.Color.Yellow;
+            this.btnFabricar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFabricar.ForeColor = System.Drawing.Color.Black;
+            this.btnFabricar.Location = new System.Drawing.Point(91, 285);
+            this.btnFabricar.Name = "btnFabricar";
+            this.btnFabricar.Size = new System.Drawing.Size(192, 58);
+            this.btnFabricar.TabIndex = 10;
+            this.btnFabricar.Text = "Quiero Fabricar";
+            this.btnFabricar.UseVisualStyleBackColor = false;
+            this.btnFabricar.Visible = false;
+            this.btnFabricar.Click += new System.EventHandler(this.btnFabricar_Click);
+            // 
+            // btnDarBaja
+            // 
+            this.btnDarBaja.BackColor = System.Drawing.Color.Red;
+            this.btnDarBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDarBaja.ForeColor = System.Drawing.Color.White;
+            this.btnDarBaja.Location = new System.Drawing.Point(330, 285);
+            this.btnDarBaja.Name = "btnDarBaja";
+            this.btnDarBaja.Size = new System.Drawing.Size(192, 58);
+            this.btnDarBaja.TabIndex = 11;
+            this.btnDarBaja.Text = "Quiero darme de baja";
+            this.btnDarBaja.UseVisualStyleBackColor = false;
+            this.btnDarBaja.Visible = false;
+            this.btnDarBaja.Click += new System.EventHandler(this.btnDarBaja_Click);
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(214, 461);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(69, 25);
+            this.lblStatus.TabIndex = 12;
+            this.lblStatus.Text = "Status:";
+            // 
+            // lblStatusCambiando
+            // 
+            this.lblStatusCambiando.AutoSize = true;
+            this.lblStatusCambiando.BackColor = System.Drawing.Color.Transparent;
+            this.lblStatusCambiando.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatusCambiando.Location = new System.Drawing.Point(289, 461);
+            this.lblStatusCambiando.Name = "lblStatusCambiando";
+            this.lblStatusCambiando.Size = new System.Drawing.Size(0, 25);
+            this.lblStatusCambiando.TabIndex = 13;
+            // 
+            // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(976, 501);
+            this.Controls.Add(this.lblStatusCambiando);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.btnDarBaja);
+            this.Controls.Add(this.btnFabricar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblListadoClientes);
             this.Controls.Add(this.btnConfirmarId);
@@ -183,9 +240,10 @@ namespace FrmHome
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FrmHome";
+            this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fábrica Galáctica";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.FrmHome_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -204,6 +262,10 @@ namespace FrmHome
         private System.Windows.Forms.Button btnConfirmarId;
         private System.Windows.Forms.Label lblListadoClientes;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnFabricar;
+        private System.Windows.Forms.Button btnDarBaja;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label lblStatusCambiando;
     }
 }
 
