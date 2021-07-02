@@ -288,9 +288,8 @@ namespace FrmProductos
             else
             {
                 this.ValidacionesSable(modeloRebelde);
-            }
-
-            rchTxtBoxProductos.Text = this.cliente.ListarProductos();
+            }            
+            this.MostrarEnRchTxtProductos(this.cliente.ListarProductos());
         }
         /// <summary>
         /// Guarda el listado de productos como texto
@@ -453,7 +452,7 @@ namespace FrmProductos
                     try
                     {
                         this.cliente.ListadoProductos = PuntoXml<List<Producto>>.Leer(path);
-                        rchTxtBoxComparar.Text = this.cliente.ListarProductos();
+                        //this.MostrarEnRchTxtProductos(this.cliente.ListarProductos());
                     }
                     catch (Exception exception)
                     {
@@ -473,7 +472,7 @@ namespace FrmProductos
                     Conexion.EliminarProductos(this.cliente);
                     MessageBox.Show("Eliminado exitosamente", "Listo!");
                     this.cliente.ListadoProductos = new List<Producto>();
-                    rchTxtBoxProductos.Text = this.cliente.ListarProductos();
+                    //this.MostrarEnRchTxtProductos(this.cliente.ListarProductos());
                 }
                 catch (Exception)
                 {
@@ -481,7 +480,7 @@ namespace FrmProductos
                 }
                 finally
                 {
-                    rchTxtBoxProductos.Text = this.cliente.ListarProductos();
+                    this.MostrarEnRchTxtProductos(this.cliente.ListarProductos());
                 }
             }
             else

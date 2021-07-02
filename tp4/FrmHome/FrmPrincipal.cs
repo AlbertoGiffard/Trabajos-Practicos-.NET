@@ -45,8 +45,8 @@ namespace FrmHome
         /// <param name="e"></param>
         private void FrmHome_Load(object sender, EventArgs e)
         {
-            //audio = new SoundPlayer(FrmHome.Properties.Resources.cantina);
-            //audio.PlayLooping();
+            audio = new SoundPlayer(FrmHome.Properties.Resources.cantina);
+            audio.PlayLooping();
 
             //VERSION SIN BASE DE DATOS
             //Cliente c1 = new Cliente(1, "Anakin", false);
@@ -216,9 +216,14 @@ namespace FrmHome
             }
             else
             {
-                MessageBox.Show("Ese valor no es posible, solo numeros enteros");
+                MessageBox.Show("Ese valor no es posible, solo numeros enteros", "error");
             }
             txtBoxId.Text = String.Empty;
+            lblId.Visible = false;
+            txtBoxId.Visible = false;
+            btnConfirmarId.Visible = false;
+            btnFabricar.Visible = false;
+            btnDarBaja.Visible = false;
             this.posicion = Posicion.SinDefinir;
         }
         /// <summary>
@@ -237,7 +242,14 @@ namespace FrmHome
         }
         private void DarDeBajaCliente(Cliente cliente)
         {
-            Conexion.EliminarCliente(cliente);
+            try
+            {
+                Conexion.EliminarCliente(cliente);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hubo un error en intentar dar de baja, intente en otro momento", "Error");
+            }
         }
         /// <summary>
         /// abre un formulario de alta de cliente
@@ -266,7 +278,7 @@ namespace FrmHome
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
-        {            
+        {
             this.Close();
         }
 

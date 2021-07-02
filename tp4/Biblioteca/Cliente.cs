@@ -75,18 +75,7 @@ namespace Biblioteca
         {
             get
             {
-                string result = String.Empty;
-
-                if (this.esRebelde)
-                {
-                    result = "Si";
-                }
-                else
-                {
-                    result = "No";
-                }
-
-                return result;
+                return this.BuscarSith();
             }
             set
             {
@@ -108,6 +97,8 @@ namespace Biblioteca
         {
             get
             {
+                this.MostrarListadoDeProductos.Invoke(this.ListarProductos());
+
                 return this.listaProductos;
             }
             set

@@ -41,20 +41,6 @@ namespace ProbandoFuncionalidad
         }
 
         [TestMethod]
-        public void AgregarProductoConStockACliente()
-        {
-            //Arrange
-            Cliente c1 = new Cliente(1, "Anakin", false);
-            Producto p1 = new Droide(Droide.TipoDroide.Astromecanico, 2, 600, 1999, true);
-
-            //Act
-            c1 += p1;
-
-            //Assert
-            Assert.AreNotEqual<int>(0, c1.ListadoProductos.Count);
-        }
-
-        [TestMethod]
         [ExpectedException(typeof(SinStockException))]
         public void AgregarProductoSinStock()
         {
@@ -95,6 +81,36 @@ namespace ProbandoFuncionalidad
 
             //Assert
             Assert.IsTrue(s1.Ensamblar(s1));
+        }
+
+        [TestMethod]
+        public void IndicarQueEsUnSith()
+        {
+            //Arrange
+            Cliente c1 = new Cliente(1, "Anakin", false);
+
+            //Assert
+            Assert.AreEqual("No (Es Sith)", c1.EsRebelde);
+        }
+
+        [TestMethod]
+        public void GuardarUnClienteEnLaBase()
+        {
+            //Arrange
+            Cliente c1 = new Cliente(21, "prueba", false);
+
+            //Assert
+            Assert.IsTrue(Conexion.GuardarCliente(c1));
+        }
+
+        [TestMethod]
+        public void BorrarUnClienteEnLaBase()
+        {
+            //Arrange
+            Cliente c1 = new Cliente(21, "prueba", false);
+
+            //Assert
+            Assert.IsTrue(Conexion.EliminarCliente(c1));
         }
     }
 }

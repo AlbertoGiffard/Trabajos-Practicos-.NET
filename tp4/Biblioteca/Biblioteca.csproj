@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="ExtensionCliente.cs" />
     <Compile Include="IFabricar.cs" />
     <Compile Include="PuntoDat.cs" />
     <Compile Include="PuntoTxt.cs" />
