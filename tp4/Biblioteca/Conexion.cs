@@ -17,7 +17,7 @@ namespace Biblioteca
         {
             //Registro la data de la base de datos
             //cambiar nombre !!!!!!!!
-            conexionStr = @"Data Source = LAPTOP-ALBERTO-; Initial Catalog = TableTP4; Integrated Security = True";
+            conexionStr = @"Data Source = .; Initial Catalog = TableTP4; Integrated Security = True";
         }
         /// <summary>
         /// La consulta se le pasa por parametro y el resto estaria parametrizado

@@ -242,14 +242,7 @@ namespace FrmHome
         }
         private void DarDeBajaCliente(Cliente cliente)
         {
-            try
-            {
-                Conexion.EliminarCliente(cliente);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Hubo un error en intentar dar de baja, intente en otro momento", "Error");
-            }
+            Conexion.EliminarCliente(cliente);
         }
         /// <summary>
         /// abre un formulario de alta de cliente
